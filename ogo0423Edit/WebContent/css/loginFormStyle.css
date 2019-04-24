@@ -1,0 +1,43 @@
+@charset "UTF-8";
+<style>
+	body {
+      width: auto;
+      margin: 200px;
+   }
+   
+   .inputposition {
+      position: relative;
+       left: 190px;
+      background-color: #ccc;
+  	  border: none;
+  	  color: white;
+  	  width:120px; height: 50px; margin:10px;
+	font-family:"Rix고딕 B";
+	font-size: 20px;
+   }
+   .inputposition:hover {
+   	color:#12406a;
+   }
+   
+   .content {
+      text-align: center;
+      padding: 10px;
+      min-height: calc(100vh - 20px);
+      <!--background-color: skyblue;-->
+   }
+   
+   .loginbutton {
+   		border: none;
+   		width:500px; height: 70px; margin:10px;
+   		background-color : #1c1c1c;
+		color: white;
+		font-family:"Rix고딕 B";
+		cursor: pointer;
+		font-size: 25px;
+   }
+   .loginbutton:hover {
+   	color: #ccc;
+   }
+   
+   
+</style>

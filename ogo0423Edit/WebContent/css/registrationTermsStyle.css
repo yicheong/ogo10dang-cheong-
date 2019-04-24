@@ -1,0 +1,169 @@
+@charset "UTF-8";
+<style>
+      .contents {
+     margin-left: auto;
+   	margin-right: auto;
+   	margin-bottom : 26.8px;
+   	background-color :white;
+     }
+   .checkbox-circle {
+    }
+   
+/* The container */
+.termscontainer {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  margin-top:30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family:"나눔스퀘어";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.termscontainer input {
+  position: absolute;
+  margin-left: 100px;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ccc;
+  margin-bottom:15px;
+}
+
+/* Create a custom checkbox */
+.checkmarkLarge {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #ccc;
+  margin-top:3px;
+  margin-bottom:5px;
+}
+
+/* On mouse-over, add a grey background color */
+.termscontainer:hover input ~ .checkmark {
+  background-color: #f2f2f2;
+}
+
+/* On mouse-over, add a grey background color */
+.termscontainer:hover input ~ .checkmarkLarge {
+  background-color: #f2f2f2;
+}
+
+/* When the checkbox is checked, add a blue background */
+.termscontainer input:checked ~ .checkmark {
+  background-color: #f2f2f2;
+}
+/* When the checkbox is checked, add a blue background */
+.termscontainer input:checked ~ .checkmarkLarge {
+  background-color: #f2f2f2;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkLarge:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.termscontainer input:checked ~ .checkmark:after {
+  display: block;
+}
+.termscontainer input:checked ~ .checkmarkLarge:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.termscontainer .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* Style the checkmark/indicator */
+.termscontainer .checkmarkLarge:after {
+  left: 9px;
+  top: 4px;
+  width: 10px;
+  height: 15px;
+  border: solid #12406a;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#cancleButton {
+  background-color: #ccc;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 25px;
+  font-family:"Rix고딕 B";
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#nextButton {
+  background-color : #1c1c1c;
+   color: white;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 25px;
+  font-family:"Rix고딕 B";
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#nextButton:hover {
+color: #ccc;
+}
+#cancleButton:hover {
+color:#12406a;
+
+}
+.bottomButton {
+   text-align:center;
+   margin-top:15px;
+}
+</style>
